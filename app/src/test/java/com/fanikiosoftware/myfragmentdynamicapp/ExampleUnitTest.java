@@ -1,4 +1,4 @@
-package com.fanikiosoftware.myfragmentapp;
+package com.fanikiosoftware.myfragmentdynamicapp;
 
 import org.junit.Test;
 

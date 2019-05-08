@@ -1,4 +1,4 @@
-package com.fanikiosoftware.myfragmentapp.Fragments;
+package com.fanikiosoftware.myfragmentdynamicapp.Fragments;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -8,7 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.fanikiosoftware.myfragmentapp.R;
+import com.fanikiosoftware.myfragmentdynamicapp.R;
 
 /**
  * A simple Fragment subclass.

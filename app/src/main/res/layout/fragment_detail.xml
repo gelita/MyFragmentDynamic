@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.fanikiosoftware.myfragmentapp.Controllers.Activities.DetailActivity"
+    tools:context="com.fanikiosoftware.myfragmentdynamicapp.Controllers.Activities.DetailActivity"
     android:gravity="center"
     android:background="#D8DCF0">
 
