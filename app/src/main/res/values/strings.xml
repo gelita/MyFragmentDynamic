@@ -4,4 +4,12 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="show_me_details">SHOW ME DETAILS !</string>
+    <string name="show_horrible_detail">Show horrible detail</string>
+    <string name="show_sad_detail">Show sad detail</string>
+    <string name="show_happy_detail">Show happy detail</string>
+    <string name="i_have_no_details_to_show_you">I have no details to show you...</string>
+    <string name="goodProgrammer">You\'re a very good programmer !</string>
+    <string name="jonSnow">I do believe that Jon Snow is going to die in next season...</string>
+    <string name="game_of_thrones">Maybe Game of Thrones next season will get back in 2040 ?</string>
+
 </resources>

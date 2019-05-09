@@ -1,28 +1,38 @@
 package com.fanikiosoftware.myfragmentdynamicapp.Fragments;
-
-
-import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-
-import com.fanikiosoftware.myfragmentdynamicapp.R;
-
-/**
- * A simple {@link Fragment} subclass.
- */
 public class DetailFragment extends Fragment {
 
-    public DetailFragment() {
-        // Required empty public constructor
+    ....
+
+    // 1 - Declare a buttonTag tracking
+    private int buttonTag;
+    // 2 - Create static variable to identify key in Bundle
+    private static final String KEY_BUTTONTAG = "com.openclassrooms.myfragmentapp.Controllers.Fragments.DetailFragment.KEY_BUTTONTAG";
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        // 5 - Restore last buttonTag if possible
+        if (savedInstanceState != null) {
+            int buttonTagRestored = savedInstanceState.getInt(KEY_BUTTONTAG, 0);
+            // 6 - Update TextView
+            this.updateTextView(buttonTagRestored);
+        }
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_detail, container, false);
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        // 4 - Save buttonTag in Bundle when fragment is destroyed
+        outState.putInt(KEY_BUTTONTAG, buttonTag);
     }
 
+    // --------------
+    // UPDATE UI
+    // --------------
+
+    //Update TextView depending on TAG's button
+    public void updateTextView(int tag){
+
+        // 3 - Save tag in ButtonTag variable
+        this.buttonTag = tag;
+    }
 }
